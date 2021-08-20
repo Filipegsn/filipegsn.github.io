@@ -8,7 +8,7 @@
 body{
     background: #001;
     color: #FFFAFA;
-    font-family: sans-serif;
+    font-family: 'Azeret Mono', monospace;
     font-size: 12px;
 }
 
@@ -65,10 +65,12 @@ a:hover{
 
 .title{
     font-size: 2.5em;
+    font-family: 'Merienda One', cursive;
 }
 
 .subtitle{
     font-style: italic;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .teste{
