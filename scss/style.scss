@@ -1,0 +1,101 @@
+// FONTES
+$font-texto: 'Azeret Mono', monospace;
+
+// CORES
+$background: #001;
+$font-color: #FFFAFA;
+
+// TIPOGRAFIA
+@mixin tipo-1 ($size) {
+    font-family: 'Azeret Mono', monospace;
+    @if $size == 12{
+        font-size: 12px;
+    }
+    @else if $size == 16{
+        font-size: 16px;
+    }
+    @else if $size == 24{
+        font-size: 24px;
+    }
+}
+
+@mixin tipo-2 ($size) {
+    font-family: 'Merienda One', cursive;
+    @if $size == 12{
+        font-size: 2.5em;
+    }
+}
+
+@mixin tipo-3 ($size) {
+    @if $size == 12{
+        font-style: italic;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+}
+
+
+// GERAL
+body{
+    background: $background;
+    color: $font-color;
+    @include tipo-1(16);
+
+    @media (max-width: 400px) {
+        body{
+            font-size: 12px;
+        }
+    }
+}
+
+header{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.menu a{
+    /* background: red; */
+    display: block;
+    padding: 15px 15px;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+}
+
+.menu li{
+    list-style: none;
+    text-decoration: none; 
+}
+
+a{
+    color: $font-color;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: line-through;
+}
+
+.title,
+.subtitle{
+    text-align: center;
+}
+
+.title{
+    @include tipo-2(12);
+}
+
+.subtitle{
+    @include tipo-3(12);
+}
+
