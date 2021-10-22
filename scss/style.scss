@@ -35,7 +35,7 @@ $font-color: #FFFAFA;
 }
 
 
-// GERAL
+// GERAL & HEADER
 body{
     background: $background;
     color: $font-color;
@@ -101,5 +101,14 @@ a:hover{
 
 .subitle{
     @include tipo-sub(12);
+}
+
+// CONTEUDO
+
+.content{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 
