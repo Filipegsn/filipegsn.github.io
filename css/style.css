@@ -2,11 +2,11 @@ body {
   background: #001;
   color: #FFFAFA;
   font-family: "Azeret Mono", monospace;
-  font-size: 24px;
+  font-size: 16px;
 }
-@media (max-width: 400px) {
+@media (max-width: 360px) {
   body body {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -59,12 +59,16 @@ a {
 }
 
 a:hover {
-  text-decoration: line-through;
+  -webkit-text-decoration: underline #FFFAFA solid 3px;
+          text-decoration: underline #FFFAFA solid 3px;
 }
 
 .title,
 .subitle {
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .title {
@@ -78,6 +82,7 @@ a:hover {
 }
 
 .content {
+  margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -87,4 +92,11 @@ a:hover {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
+}
+
+span:hover {
+  font-weight: bold;
+  font-size: large;
+  -webkit-text-decoration: underline #FFFAFA solid 3px;
+          text-decoration: underline #FFFAFA solid 3px;
 }
