@@ -33,8 +33,6 @@ $font-color: #FFFAFA;
     }
 
 }
-
-
 // GERAL & HEADER
 body{
     background: $background;
@@ -87,23 +85,41 @@ a{
     text-decoration: none;
 }
 a:hover{
-    text-decoration: underline #FFFAFA solid 3px; 
+    text-decoration: underline $font-color solid 3px; 
 }
 
 .title,
-.subitle{
+.subtitle{
     text-align: center;
     justify-content: center;
 }
-
 .title{
     @include tipo-title(1);
 }
 
-.subitle{
+.subtitle{
     @include tipo-sub(1);
+    border-right: 2px solid $font-color;
+    animation: blink 600ms steps(40) infinite normal, typing 4s steps(40) 1s normal;
+    white-space: nowrap;
+    overflow: hidden;
 }
-
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 17em;
+    }
+}
+@keyframes blink {
+    from{
+        border-right-color: $font-color;
+    }    
+    to{
+        border-right-color: transparent;
+    }
+}
 // CONTEUDO
 
 .content{

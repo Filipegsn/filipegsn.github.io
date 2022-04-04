@@ -64,7 +64,7 @@ a:hover {
 }
 
 .title,
-.subitle {
+.subtitle {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -76,11 +76,49 @@ a:hover {
   font-size: 2.5em;
 }
 
-.subitle {
+.subtitle {
   font-style: italic;
   font-family: "Source Code Pro", monospace;
+  border-right: 2px solid #FFFAFA;
+  -webkit-animation: blink 600ms steps(40) infinite normal, typing 4s steps(40) 1s normal;
+          animation: blink 600ms steps(40) infinite normal, typing 4s steps(40) 1s normal;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17em;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17em;
+  }
+}
+@-webkit-keyframes blink {
+  from {
+    border-right-color: #FFFAFA;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@keyframes blink {
+  from {
+    border-right-color: #FFFAFA;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 .content {
   margin: 0;
   -webkit-box-align: center;
