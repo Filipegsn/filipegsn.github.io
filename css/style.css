@@ -2,7 +2,7 @@ body {
   background: #001;
   color: #FFFAFA;
   font-family: "Azeret Mono", monospace;
-  font-size: 16px;
+  font-size: 18px;
 }
 @media (max-width: 360px) {
   body body {
@@ -96,7 +96,6 @@ a:hover {
 
 span:hover {
   font-weight: bold;
-  font-size: large;
   -webkit-text-decoration: underline #FFFAFA solid 3px;
           text-decoration: underline #FFFAFA solid 3px;
 }

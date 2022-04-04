@@ -9,10 +9,10 @@ $font-color: #FFFAFA;
 @mixin tipo-texto ($size) {
     font-family: 'Azeret Mono', monospace;
     @if $size == 1{
-        font-size: 12px;
+        font-size: 14px;
     }
     @else if $size == 2{
-        font-size: 16px;
+        font-size: 18px;
     }
     @else if $size == 3{
         font-size: 24px;
@@ -115,7 +115,6 @@ a:hover{
 }
 span:hover{
     font-weight: bold;
-    font-size: large;
     text-decoration: underline #FFFAFA solid 3px;
 }
 
