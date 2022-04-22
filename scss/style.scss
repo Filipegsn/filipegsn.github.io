@@ -128,9 +128,33 @@ a:hover{
     justify-content: center;
     align-content: center;
     text-align: center;
+    width: 100vw;
 }
 span:hover{
     font-weight: bold;
     text-decoration: underline #FFFAFA solid 3px;
 }
-
+.sobre{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.contato{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+}
+.painel-port{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include tipo-texto(1);
+}
